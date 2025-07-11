@@ -1,0 +1,411 @@
+.project-container {
+  background-color: #0c0c0c;
+  color: white;
+  font-family: '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fec544;
+  margin-bottom: 40px;
+  font-family: '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+  gap: 60px;
+}
+
+.project-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.project-number {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fec544;
+}
+
+.project-title {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.yellow-btn {
+  background-color: #fec544;
+  color: black;
+  border: none;
+}
+
+.yellow-btn:hover {
+  background-color: transparent;
+  border: 2px solid #FEC544;
+  color: white;
+
+}
+
+.outline-btn {
+  border: 2px solid #fec544;
+  color: white;
+}
+
+.outline-btn:hover {
+  background-color: #ffd700;
+  color: black;
+}
+
+.project-image-wrapper {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box {
+  border: 6px solid #FEC544;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 40px;
+  bottom: 50px;
+  border-radius: 10px;
+  display: block;
+
+}
+
+
+.project-content:nth-child(even) .project-image-wrapper {
+  margin-left: 60px;
+}
+
+.project-content:nth-child(odd) .project-image-wrapper {
+  margin-right: 60px;
+  margin-top: 50px;
+
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tab-btn {
+  font-family: "Red Rose", sans-serif;
+  background-color: #eee;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  transform: 0.3s;
+}
+
+.tab-btn:hover {
+  transform: translateY(-6px);
+}
+
+.tab-btn.active {
+  background-color: #fec544;
+  font-weight: bold;
+}
+
+.tools {
+  margin-bottom: 20px;
+}
+
+.tools-label {
+  color: #FEC544;
+  margin-bottom: 8px;
+}
+
+.tools-links {
+  display: flex;
+  gap: 20px;
+}
+
+.tools-link span {
+  color: #9ca3af;
+}
+
+.tools-divider {
+  color: #9ca3af;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+
+
+@media (min-width: 1200px) {
+  .project-container {
+    padding: 120px 200px 0 200px;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .project-container {
+    padding: 100px 100px;
+  }
+
+  .image-box {
+    width: 400px;
+  }
+
+  .project-image {
+    left: 35px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    margin-top: 50px;
+  }
+
+  .tab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+
+  }
+
+  .tab-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 10px 12px;
+  }
+
+  .project-container {
+    padding: 60px 40px;
+  }
+
+  .project-content {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+  }
+
+  .project-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .tools-links {
+    justify-content: center;
+  }
+
+  .image-box {
+    width: 300px;
+    margin-top: 25px;
+  }
+
+  .project-image {
+    width: 220px;
+
+  }
+
+  .project-content:nth-child(even) .project-image-wrapper {
+    margin-left: 0;
+  }
+
+  .project-content:nth-child(odd) .project-image-wrapper {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .project-container {
+    padding: 80px 60px;
+  }
+
+  .project-content {
+    margin-top: 80px;
+  }
+
+  .image-box {
+    width: 350px;
+  }
+
+  .project-image {
+    left: 30px;
+    bottom: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    justify-content: center;
+  }
+
+  .project-container {
+    padding: 60px 40px;
+  }
+
+  .project-content {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+  }
+
+  .project-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-image-wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-box {
+    width: 300px;
+  }
+
+  .project-image {
+    left: 25px;
+    bottom: 35px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .project-container {
+    padding: 40px 20px;
+  }
+
+  .project-content {
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .image-box {
+    width: 250px;
+  }
+
+  .project-image {
+    left: 20px;
+    bottom: 25px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .project-container {
+    padding: 30px 15px;
+  }
+
+  .image-box {
+    width: 220px;
+  }
+
+  .project-image {
+    left: 15px;
+    bottom: 20px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .project-container {
+    padding: 20px 10px;
+  }
+
+  .image-box {
+    width: 200px;
+  }
+
+  .project-image {
+    left: 12px;
+    bottom: 15px;
+  }
+}
+
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}
