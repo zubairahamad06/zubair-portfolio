@@ -240,9 +240,64 @@ border: 1px solid #fbbf24;
 
 
 
+@media (max-width: 1200px) {
+  .about {
+    gap: 100px;
+    padding: 100px 20px 0;
+  }
+  
+  .profile-img {
+    width: 350px;
+  }
+  
+  .about-section {
+    max-width: 450px;
+  }
+}
 
 
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin: 0 20px;
 
+  }
+  
+  .profile-img {
+    width: 300px;
+    order: -1;
+  }
+  
+  .about-section {
+    max-width: 90%;
+    /* margin-top: 0; */
+    text-align: center;
+  }
+  
+  .about-section p {
+    text-align: left;
+  }
+  
+  .about-section h2 {
+    font-size: 28px;
+  }
+  
+  .about-section h3 {
+    font-size: 22px;
+  }
+  
+  .buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .btn {
+    min-width: 140px;
+    padding: 10px 20px;
+  }
+}
 
 
 @media (max-width: 768px) {
