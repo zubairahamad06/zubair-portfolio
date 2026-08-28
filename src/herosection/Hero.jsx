@@ -83,7 +83,7 @@ export const Hero = () => {
           <a href="#contact">Contact</a>
         </nav>
 
-        <a href="/zubair_resume.pdf" className="btn-cv" download>
+        <a href="/Zubair Ahamad-EXP resume.pdf" className="btn-cv" download>
           Download CV
         </a>
 
